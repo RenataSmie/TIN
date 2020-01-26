@@ -1,0 +1,26 @@
+nav.navbar {
+	background: #2952a3 !important;
+	color: white !important;
+}
+
+.btn{
+	background: #2952a3;
+	border: none;
+	color: white;
+}
+
+.carousel-item {
+  height: 400px;
+}
+
+/* Navbar links */
+.navbar a {
+  color: white;
+
+}
+
+.dropdown-menu {
+	background: #2952a3;
+	color: white;
+}
+

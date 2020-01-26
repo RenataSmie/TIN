@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../book.jpg">
+
+    <title>Pozycje biblioteczne</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+	
+	<link href="../../dist/css/custom.css" rel="stylesheet">
+		<!--style do ikonek-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <a class="navbar-brand" href="#">Biblioteka</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+			  <a class="nav-link" href="../main/index.html"><i class="fa fa-fw fa-home"></i> Start </a>
+            </li>
+
+			<li class="nav-item">
+              <a class="nav-link" href="../osoby/index.html"><i class="fa fa-fw fa-search"></i> Zasoby<span class="sr-only">(current)</span></a>
+            </li>
+          </ul>
+		    
+		  	<ul class="nav navbar-nav navbar-right">
+			<li><a href="../logowanie/index.html"><i class="fa fa-fw fa-user"></i> Login</a></li>
+			</ul>
+
+        </div>
+      </nav>
+    </header>
+	  
+	  
+	  
+	  <main role="main" class="container">
+		  <div class="starter-template">
+		  <form>
+		  			  <h1>Pozycje biblioteczne</h1>
+		  		<div class="col-md-4 align-self-end">
+					<button type="button" class="btn btn-primary btn-lg btn-block" style="margin: 0 auto;">Dodaj nową pozycję</button>
+				</div>	
+		  </form>
+			<form>
+
+	<br><br>
+		  
+		  
+		  			  <div class="form-group row">
+			<div class="col-md-4">
+              <label for="authorLastName">Nazwisko autora</label>
+				<div class="input-group">
+					<div class="input-group-prepend">
+						</div>
+							<input type="text" class="form-control" id="authorLastName" placeholder="">
+						</div>
+					</div>
+				<div class="col-md-4">
+              <label for="title">Tytuł książki</label>
+              <div class="input-group">
+                <div class="input-group-prepend">
+                </div>
+                <input type="text" class="form-control" id="title" placeholder="">
+              </div>
+            </div>
+				
+				
+				
+				<div class="col-md-4 align-self-end">
+					<button type="button" class="btn btn-primary btn-lg btn-block" style="margin: 0 auto;">Wyszukaj</button>
+				</div>			
+			  </div>	  		
+			</form>
+
+		  
+    </main>
+  
+      <div class="album py-5 bg-light">
+        <div class="container">
+          <div class="row">
+			<table class="table table-sm">
+			  <thead>
+				<tr>
+				  <th scope="col">#</th>
+				  <th scope="col">tytuł</th>
+				  <th scope="col">imię autora</th>
+				  <th scope="col">nazwisko autora</th>
+				  <th scope="col">ISBN</th>
+				  <th scope="col">rok wydania</th>
+				</tr>
+			  </thead>
+			  <tbody>
+				<tr>
+				  <th scope="row">1</th>
+				  <td><a href="metryka-ksiazka.html">W pustyni i w puszczy</a></td>
+				  <td>Henryk</td>
+				  <td>Sienkiewicz</td>
+				  <td>123-1232-SASS-133</td>
+				  <td>1990</td>
+				</tr>
+				<tr>
+				  <th scope="row">2</th>
+				  <td><a href="metryka-ksiazka.html">Harry Potter</a></td>
+				  <td>Joanne</td>
+				  <td>Rowling</td>
+				  <td>611A-859-944</td>
+				  <td>2012</td>
+				</tr>
+							
+			  </tbody>
+
+			</table>
+
+        </div>
+
+    <footer class="text-muted">
+      <div class="container">
+        <p class="float-right">
+          <a href="#">Do góry</a>
+        </p>
+        <p>2019-2020 PJWSTK w Warszawie</p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="../../../../assets/js/vendor/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="../../../../assets/js/vendor/holder.min.js"></script>
+  </body>
+</html>

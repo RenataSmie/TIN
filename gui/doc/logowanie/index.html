@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../book.jpg">
+
+    <title>Biblioteka logowanie</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="floating-labels.css" rel="stylesheet">
+	
+	<!--custom styles-->
+	<link href="../../dist/css/custom.css" rel="stylesheet">
+	<!--style do ikonek-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+  </head>
+
+  <body>
+     <header>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <a class="navbar-brand" href="#">Biblioteka</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+			  <a class="nav-link" href="../main/index.html"><i class="fa fa-fw fa-home"></i> Start </a>
+            </li>
+
+			<li class="nav-item">
+              <a class="nav-link" href="../osoby/index.html"><i class="fa fa-fw fa-search"></i> Zasoby<span class="sr-only">(current)</span></a>
+            </li>
+          </ul>
+		    
+		  	<ul class="nav navbar-nav navbar-right">
+			<li><a href="../logowanie/index.html"><i class="fa fa-fw fa-user"></i> Login</a></li>
+			</ul>
+
+        </div>
+      </nav>
+    </header>
+  
+    <form class="form-signin">
+      <div class="text-center mb-4">
+        <img class="mb-4" src="https://getbootstrap.com/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
+        <h1 class="h3 mb-3 font-weight-normal">Biblioteka</h1>
+        <p>System do zarządzania zasobami bibliotecznymi</a></p>
+      </div>
+
+      <div class="form-label-group">
+        <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+        <label for="inputEmail">Email</label>
+      </div>
+
+      <div class="form-label-group">
+        <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+        <label for="inputPassword">Hasło</label>
+      </div>
+
+      <div class="checkbox mb-3">
+        <label>
+          <input type="checkbox" value="remember-me"> Zapamiętaj mnie
+        </label>
+      </div>
+      <button class="btn btn-lg btn-primary btn-block" type="submit">Zaloguj</button>
+      <p class="mt-5 mb-3 text-muted text-center">&copy; 2019-2020</p>
+    </form>
+  </body>
+</html>

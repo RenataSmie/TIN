@@ -1,0 +1,13 @@
+var server = require('http');
+
+server.createServer(function(request, response){
+
+    var url=request.url;
+    response.writeHead(200, {'Content-Type':'text/plain'});
+    //kod 200- zapytanie zakończyło się sukcesem
+
+    console.log(url);
+    response.end(url);
+}).listen(8001);
+
+console.log('Serwer nasłuchuje pod adresem 127.0.0.1:8001');

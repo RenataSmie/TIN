@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../book.jpg">
+
+    <title>Książka metryczka</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+	
+	<link href="../../dist/css/custom.css" rel="stylesheet">
+		<!--style do ikonek-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+
+  <body>
+     <header>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <a class="navbar-brand" href="#">Biblioteka</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+			  <a class="nav-link" href="../main/index.html"><i class="fa fa-fw fa-home"></i> Start </a>
+            </li>
+
+			<li class="nav-item">
+              <a class="nav-link" href="../osoby/index.html"><i class="fa fa-fw fa-search"></i> Zasoby<span class="sr-only">(current)</span></a>
+            </li>
+          </ul>
+		    
+		  	<ul class="nav navbar-nav navbar-right">
+			<li><a href="../logowanie/index.html"><i class="fa fa-fw fa-user"></i> Login</a></li>
+			</ul>
+
+        </div>
+      </nav>
+    </header>
+
+ 
+      <div class="album py-1 bg-light">
+        <div class="container">
+			<div class="d-flex justify-content-end" style="padding: 5px;">
+				<button type="button" class="btn btn-dark">Edytuj</button>
+				<button type="button" class="btn btn-dark">Usuń</button>				
+			</div>	
+		<nav>
+		  <div class="nav nav-tabs" id="nav-tab" role="tablist">
+			<a class="nav-item nav-link active" id="nav-informacje-tab" data-toggle="tab" href="#nav-informacje" role="tab" aria-controls="nav-informacje" aria-selected="true">Informacje o pozycji bibliotecznej</a>
+
+		  </div>
+		</nav>
+		<div class="tab-content" id="nav-tabContent">
+		  <div class="tab-pane fade show active" id="nav-informacje" role="tabpanel" aria-labelledby="nav-informacje-tab">
+				<div class="row">
+					<div class="col-sm-6">
+					<div class="card mb-4">
+						<div class="card-body">	
+						<div class="form-check">
+						</div>				
+						  <div class="form-group">
+							<label for="exampleFormControlInput1">Tytuł</label>
+							<input type="text" class="form-control" id="title" value="W pustyni i w puszczy" readonly>
+						  </div>			
+						  <div class="form-group">
+							<label for="exampleFormControlInput1">Imię autora</label>
+							<input type="text" class="form-control" id="authorFirstName" value="Henryk" readonly>
+						  </div>
+						<div class="form-group">
+							<label for="exampleFormControlInput1">Nazwisko autora</label>
+							<input type="text" class="form-control" id="authorLastName" value="Sienkiewicz" readonly>
+						  </div>	
+						<div class="form-group">
+							<label for="exampleFormControlInput1">Rok wydania</label>
+							<input type="email" class="form-control" id="releaseYear"  value="1990" readonly>
+						  </div>	
+						<div class="form-group">
+							<label for="exampleFormControlInput1">ISBN</label>
+							<input type="text" class="form-control" id="isbn"  value="505-505-505" readonly>
+						  </div>				  
+
+						  </div>
+						</div>  
+					</div>
+					
+					<div class="col-sm-6">				
+					<div class="card mb-4">
+						<div class="card-body">					  
+						<div class="form-group">
+							<label for="exampleFormControlInput1">Wydawnictwo</label>
+							<input type="data" class="form-control" id="data-start"  value="Greg" readonly>
+						  </div>
+						<div class="form-group">
+							<label for="exampleFormControlInput1">Liczba stron</label>
+							<input type="data" class="form-control" id="data-end"   value="312" readonly>
+						  </div>
+						<div class="form-group">
+							<label for="exampleFormControlInput1">Okładka</label>
+							<input type="text" class="form-control" id="job"  value="Twarda" readonly>
+						  </div>						
+						 <div class="form-group">
+							<label for="more-info">Opis</label>
+							<textarea class="form-control" id="more-info" rows="3" readonly>Staś Tarkowski i Nel Rawlison mieszkają w Port Saidzie. Czternastoletni chłopiec uważa się już za dorosłego mężczyznę, siedmioletnia dziewczynka woli natomiast, by w pobliżu był jej tatuś. Nagle w ich spokojne życie wkracza historia i polityka. Nawet ojcowie dzieci nie spodziewają się, że powstanie Sudańczyków pod wodzą Mahdiego będzie dla nich miało osobiste konsekwencje. Na skutek spisku tajemniczej Fatmy dzieci zostają porwane. Przed nimi bardzo daleka droga...</textarea>
+						  </div>
+	
+						</div>	
+						</div>				  
+					  </div>
+				</div>  
+		  </div>
+		  <div class="tab-pane fade" id="nav-zwierzeta" role="tabpanel" aria-labelledby="nav-zwierzeta-tab">
+				<div class="d-flex justify-content-end" style="padding: 5px;">
+					<button type="button" class="btn btn-outline-secondary btn-sm" data-toggle="modal" data-target="#exampleModal">Dodaj</button>
+					<button type="button" class="btn btn-outline-secondary btn-sm" data-toggle="modal" data-target="#exampleModal2">Usuń</button>				
+				</div>	
+						<div class="card">
+						  <div class="card-body">
+						
+							<table class="table">
+							  <thead class="thead-light">
+								<tr>
+								  <th scope="col">#</th>
+								  <th scope="col">Nazwa</th>
+								  <th scope="col">Gatunek</th>
+								  <th scope="col">Wiek</th>
+								  <th scope="col"></th>
+								</tr>
+							  </thead>
+							  <tbody>
+								<tr>
+								  <th scope="row">1</th>
+								  <td><a href="#">Burek</a></td>
+								  <td>pies</td>
+								  <td>7</td>
+								  <td><input type="checkbox"></td>
+								</tr>
+								<tr>
+								  <th scope="row">2</th>
+								  <td><a href="#">Kicia</a></td>
+								  <td>kot</td>
+								  <td>2</td>
+								  <td><input type="checkbox"></td>
+								</tr>
+								<tr>
+								  <th scope="row">3</th>
+								  <td><a href="#">Azor</a></td>
+								  <td>pies</td>
+								  <td>12</td>
+								  <td><input type="checkbox"></td>
+								</tr>
+							  </tbody>
+							</table>
+						</div>					
+				 </div>
+			</div>
+		  <div class="tab-pane fade" id="nav-zadania" role="tabpanel" aria-labelledby="nav-zadania-tab">
+				<div class="d-flex justify-content-end" style="padding: 5px;">
+					<button type="button" class="btn btn-outline-secondary btn-sm" data-toggle="modal" data-target="#exampleModal">Dodaj</button>
+					<button type="button" class="btn btn-outline-secondary btn-sm" data-toggle="modal" data-target="#exampleModal2">Usuń</button>				
+				</div>			  
+						<div class="card">
+						  <div class="card-body">
+							<table class="table">
+							  <thead class="thead-light">
+								<tr>
+								  <th scope="col">#</th>
+								  <th scope="col">Tytuł</th>
+								  <th scope="col">Data</th>
+								  <th scope="col">Priorytet</th>
+								  <th scope="col"></th>
+								</tr>
+							  </thead>
+							  <tbody>
+								<tr>
+								  <th scope="row">1</th>
+								  <td><a href="#">Posprzątać box nr. 88</a></td>
+								  <td>2019-09-01</td>
+								  <td>średni</td>
+								  <td><input type="checkbox"></td>
+								</tr>
+								<tr>
+								  <th scope="row">2</th>
+								  <td><a href="#">Wyprowadzić Kicie</a></td>
+								  <td>2019-09-01</td>
+								  <td>niski</td>
+								  <td><input type="checkbox"></td>
+								</tr>
+								<tr>
+								  <th scope="row">3</th>
+								  <td><a href="#">Naprawić drzwi w boksie nr. 15</a></td>
+								  <td>2019-09-01</td>
+								  <td>niski</td>
+								  <td><input type="checkbox"></td>
+								</tr>
+							  </tbody>
+							</table>
+						</div>
+					  </div>			  
+		 
+			  </div>
+		  <div class="tab-pane fade" id="nav-spacer" role="tabpanel" aria-labelledby="nav-spacer-tab">
+		  	<div class="d-flex justify-content-end" style="padding: 5px;">
+				<button type="button" class="btn btn-outline-secondary btn-sm" data-toggle="modal" data-target="#exampleModal">Dodaj</button>
+				<button type="button" class="btn btn-outline-secondary btn-sm" data-toggle="modal" data-target="#exampleModal2">Usuń</button>				
+			</div>			  
+						<div class="card">
+						  <div class="card-body">
+							
+							<table class="table">
+							  <thead class="thead-light">
+								<tr>
+								  <th scope="col">#</th>
+								  <th scope="col">Zwierzę</th>
+								  <th scope="col">Dzień</th>
+								  <th scope="col"></th>
+								</tr>
+							  </thead>
+							  <tbody>
+								<tr>
+								  <th scope="row">1</th>
+								  <td><a href="#">Burek</a></td>
+								  <td>2019-17-11</td>
+								  <td><input type="checkbox"></td>
+								</tr>
+								<tr>
+								  <th scope="row">2</th>
+								  <td><a href="#">Burek</a></td>
+								  <td>2019-17-11</td>
+								  <td><input type="checkbox"></td>
+								</tr>
+								<tr>
+								  <th scope="row">3</th>
+								  <td><a href="#">Burek</a></td>
+								  <td>2019-17-11</td>
+								  <td><input type="checkbox"></td>
+								</tr>
+							  </tbody>
+							</table>
+						</div>					
+					  </div>			  
+			  </div>			  
+			</div>
+
+		   </div>
+          </div>
+        </div>
+    
+		<!-- Modal -->
+		<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		  <div class="modal-dialog" role="document">
+			<div class="modal-content">
+			  <div class="modal-header">
+				<h5 class="modal-title" id="exampleModalLabel">Dodaj</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				  <span aria-hidden="true">&times;</span>
+				</button>
+			  </div>
+			  <div class="modal-body">
+					<input type="text" class="form-control" id="type" placeholder="Wyszukaj...">
+			  </div>
+			  <div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-dismiss="modal">Zamknij</button>
+				<button type="button" class="btn btn-primary">Zapisz</button>
+			  </div>
+			</div>
+		  </div>
+		</div>    
+
+		<!-- Modal -->
+		<div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		  <div class="modal-dialog" role="document">
+			<div class="modal-content">
+			  <div class="modal-header">
+				<h5 class="modal-title" id="exampleModalLabel">Usuń</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				  <span aria-hidden="true">&times;</span>
+				</button>
+			  </div>
+			  <div class="modal-body">
+					<p> Czy napewno chcesz usunąć oznaczone rekordy?</p>
+			  </div>
+			  <div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-dismiss="modal">Zamknij</button>
+				<button type="button" class="btn btn-primary">Usuń</button>
+			  </div>
+			</div>
+		  </div>
+		</div>   		
+		
+    <footer class="text-muted">
+      <div class="container">
+        <p class="float-right">
+          <a href="#">Do góry</a>
+        </p>
+        <p>2019-2020 PJWSTK w Warszawie</p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="../../../../assets/js/vendor/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="../../../../assets/js/vendor/holder.min.js"></script>
+  </body>
+</html>
